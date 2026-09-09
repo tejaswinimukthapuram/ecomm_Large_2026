@@ -1,0 +1,53 @@
+# # Dependencies
+# node_modules/
+# Ecom_frontend_large/node_modules/
+# Ecom_backend_large/node_modules/
+
+# # Environment files
+# .env
+# Ecom_frontend_large/.env
+# Ecom_backend_large/.env
+
+# # Build output
+# Ecom_frontend_large/build/
+# Ecom_frontend_large/dist/
+# Ecom_backend_large/dist/
+
+# # Logs
+# npm-debug.log*
+# yarn-debug.log*
+# yarn-error.log*
+
+# # OS files
+# .DS_Store
+# Thumbs.db
+
+# # IDE files
+# .vscode/
+# .idea/
+
+
+# Dependencies
+node_modules/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Build output
+build/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/

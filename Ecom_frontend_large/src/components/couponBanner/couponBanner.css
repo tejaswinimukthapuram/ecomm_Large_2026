@@ -1,0 +1,162 @@
+
+
+.coupon-banner-container{
+  
+    background:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+.coupon-banner{
+     background:linear-gradient(to right,rgb(239, 180, 236), rgb(222, 169, 192),rgb(199, 133, 150));
+     /* border: 6px groove #ccc; */
+     padding: 30px;
+     display: flex;
+     flex: row;
+     justify-content:space-around;
+     align-items: center;
+    border-radius: 15px;
+    width:85%;
+    height:180px;
+    position: relative;
+
+ 
+}
+
+
+
+.circle1, .circle2, .circle3, .circle4, .circle5, .circle6{
+    background:white;
+    width: 40px;
+    height:40px;
+    border-radius:50%;
+   
+}
+
+.circle1{
+    left: -25px;
+     position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.circle2{
+    right: -25px;
+     position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.circle3{
+     left: -25px;
+     position: absolute;
+    top:90%;
+    transform: translateY(-90%);
+} 
+
+.circle4{
+     right: -25px;
+     position: absolute;
+    top:90%;
+    transform: translateY(-90%);
+}
+
+.circle5{
+     left: -25px;
+     position: absolute;
+    top:10%;
+    transform: translateY(-10%);
+} 
+
+.circle6{
+     right: -25px;
+     position: absolute;
+    top:10%;
+    transform: translateY(-10%);
+}
+
+
+.gradient-text {
+  background: linear-gradient(90deg, #e96d1b, #f23ea4, #f52556);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  font-size: 4rem;
+  
+}
+
+.off{
+    font-size: 2rem;
+    color: rgba(71, 67, 67, 0.44);
+    font-weight: 600;
+}
+
+
+.sale-gradient{
+    /* background: white; */
+    /* width: 40%;
+    height: 70%;
+    border-radius: 15px;
+    position: relative; */
+font-weight: 900;
+font-size: 4rem;
+background: linear-gradient(90deg, #e96d1b, #f23ea4, #f52556);
+
+}
+
+
+.sparkle-text {
+  font-size: 55px;
+  font-weight: 900;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  color: transparent;
+
+  /* Base gradient for the text */
+  background: linear-gradient(45deg, #fffb00, #ffb300, #ca856e, #d94b12);
+  -webkit-background-clip: text;
+  background-size: 300%;
+  
+  animation: textGlow 1.8s infinite ease-in-out, 
+             gradientMove 5s linear infinite;
+}
+
+/* Glitter texture overlay */
+.sparkle-text::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* background: url("https://i.imgur.com/w3Y6P5v.png"); */
+  mix-blend-mode: screen;
+  opacity: 0.9;
+  animation: sparkleMove 2s linear infinite;
+  pointer-events: none;
+}
+
+/* Glitter movement */
+@keyframes sparkleMove {
+  0%   { transform: translate(0,0); }
+  100% { transform: translate(120%,120%); }
+}
+
+/* Smooth blinking */
+@keyframes textGlow {
+  0%, 100% { opacity: 1; filter: drop-shadow(0 0 10px #fff); }
+  50%      { opacity: 0.4; filter: drop-shadow(0 0 2px #000); }
+}
+
+/* Gradient shimmering movement */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 300% 50%; }
+}
+
+
+
+

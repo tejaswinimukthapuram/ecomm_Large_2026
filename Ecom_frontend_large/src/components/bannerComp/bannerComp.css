@@ -1,0 +1,15 @@
+.carousel-image {
+  height: 450px; /* adjust height here */
+  overflow: hidden;
+}
+
+.carousel-image .carousel-item {
+  height: 100%;
+}
+
+.carousel-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;  /* prevents squeezing */
+object-position: center;
+}
